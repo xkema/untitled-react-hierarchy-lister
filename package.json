@@ -1,0 +1,25 @@
+{
+  "name": "untitled-react-hierarchy-lister",
+  "version": "1.0.0",
+  "description": "untitled-react-hierarchy-lister",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xkema/untitled-react-hierarchy-lister.git"
+  },
+  "author": "Kemal Yilmaz <kemalxyz@gmail.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/xkema/untitled-react-hierarchy-lister/issues"
+  },
+  "homepage": "https://github.com/xkema/untitled-react-hierarchy-lister#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
