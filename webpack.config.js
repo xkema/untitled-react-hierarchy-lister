@@ -18,9 +18,12 @@ const _webpackConfig = {
   module: {
     rules: [{
         resource: {
-          test: /\.js$/,
+          test: /\.jsx?$/,
           include: [path.resolve(__dirname, 'src')]
-        }
+        },
+        use: [{
+          loader: 'babel-loader'
+        }]
       }]
   },
   devtool: 'source-map',
