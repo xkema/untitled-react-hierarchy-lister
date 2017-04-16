@@ -1,6 +1,8 @@
 import React from 'react';
-import Manipulators from '../utils/dataset-manipulators.util.js';
+import ManipulatorUtils from '../utils/dataset-manipulators.util.js';
 import classNames from '../../node_modules/classnames/index.js';
+import VikingsGameUtils from '../utils/vikings-game.utils.js';
+import {APP_CONSTANTS} from '../../src/App.constants.js';
 
 export default class TreeListItem extends React.Component {
 
@@ -55,6 +57,11 @@ export default class TreeListItem extends React.Component {
   _toggleListItem(event) {
     this.setState({
       expanded: !this.state.expanded
+    }, () => {
+      if(this.state.expanded) {
+        // dispatch quest event for toggler
+        VikingsGameUtils.dispatchVikingsGameEvent(APP_CONSTANTS.quests.elementExpanded);
+      }
     });
   };
 
@@ -73,9 +80,6 @@ export default class TreeListItem extends React.Component {
    * @event {object} event -  
    */
   _deleteNode(event) {
-    this.setState({
-      deleting: true
-    });
     this.props.onNodeDataUpdate(this.props.node);
   };
 
@@ -149,9 +153,12 @@ export default class TreeListItem extends React.Component {
         'urhl-tree-item-expanded': true === this.state.expanded
       };
       const _renderedElements = this.props.children.map((child, index) => {
-        const _nodeData = Manipulators.splitData(this.props.remains, child.ID);
+        const _nodeData = ManipulatorUtils.splitData(this.props.remains, child.ID);
         return <li key={child.Name}>
-                 <TreeListItem children={_nodeData.children} remains={_nodeData.remains} node={child} onNodeDataUpdate={this.props.onNodeDataUpdate} />
+                 <TreeListItem children={_nodeData.children} 
+                               remains={_nodeData.remains} 
+                               node={child} 
+                               onNodeDataUpdate={this.props.onNodeDataUpdate} />
                </li>;
       });
       return <ul className={classNames(_classSetTogglers)}>

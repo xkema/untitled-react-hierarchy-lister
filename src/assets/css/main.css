@@ -21,6 +21,7 @@ CONTENT
 */
 
 #urhl-header {
+  position: relative;
   background-color: #f9f9f9;
   border-bottom: 1px solid #d2d2d2;
   padding: 1.5rem 0;
@@ -213,6 +214,99 @@ UTILS
 
 .urhl-hidden {
    display: none; 
+}
+
+/*
+--------------------------
+VIKINGS
+--------------------------
+*/
+
+.urhl-vikings-game {
+  /*background-color: #f9f9f9;*/
+  background-color: #f9f9f9;
+  border-left: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  position: fixed;
+  right: 0;
+  top: 8rem;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.urhl-btn-quests {
+  /*position: absolute;*/
+  /*margin: 0;*/
+  /*padding: 0 2rem;*/
+  /*left: 0;*/
+  /*top: .5rem;*/
+}
+
+.urhl-btn-quests > span:last-child {
+  display: block;
+}
+
+.urhl-btn-quests > span:first-child {
+  display: none;
+}
+
+.urhl-vikings-game h3,
+.urhl-vikings-game h4 {
+  text-align: right;
+}
+
+.urhl-quest-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.urhl-quest-list input[type=checkbox] {
+  margin-bottom: 0;
+  /*pointer-events: none;*/
+}
+
+.urhl-quest-list span {
+  /*display: inline-block;*/
+  /*margin-right: 1rem;*/
+}
+
+.urhl-quest-list input + code {
+  cursor: help;
+}
+
+.urhl-vikings-game.panel-minimized {
+  position: relative;
+  right: auto;
+  top: auto;
+  float: right;
+  padding: 0;
+  border: none;
+}
+
+.urhl-vikings-game.panel-minimized .urhl-btn-quests {
+  /*right: 90%;*/
+  /*left: auto;*/
+}
+
+.urhl-vikings-game.panel-minimized > div,
+.urhl-vikings-game.panel-minimized > ul {
+  display: none;
+}
+
+.urhl-vikings-game.panel-minimized > .urhl-btn-quests > span:first-child {
+  display: block;
+}
+
+.urhl-vikings-game.panel-minimized > .urhl-btn-quests > span:last-child {
+  display: none;
+}
+
+.urhl-vikings-game.panel-minimized > .urhl-btn-quests {
+  /*background: crimson*/
 }
 
 /*

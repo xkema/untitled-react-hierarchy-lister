@@ -1,6 +1,6 @@
 import React from 'react';
 import TreeListItem from './TreeListItem.component.jsx';
-import Manipulators from '../utils/dataset-manipulators.util.js';
+import ManipulatorUtils from '../utils/dataset-manipulators.util.js';
 
 export default class TreeList extends React.Component {
 
@@ -19,7 +19,7 @@ export default class TreeList extends React.Component {
 
   render() {
     // get root children (prepare first-level depth data to start recursion)
-    const _treeListRootData = Manipulators.splitDataForRootItems(this.props.dataset);
+    const _treeListRootData = ManipulatorUtils.splitDataForRootItems(this.props.dataset);
 
     // skip if root has no child
     if(0 === _treeListRootData.children.length) {
@@ -39,7 +39,10 @@ export default class TreeList extends React.Component {
 
     // render tree root items with defacto root node
     return <div className={'urhl-tree'}>
-             <TreeListItem children={_treeListRootData.children} remains={_treeListRootData.remains} node={_node} onNodeDataUpdate={this.datasetUpdated} />
+             <TreeListItem children={_treeListRootData.children} 
+                           remains={_treeListRootData.remains} 
+                           node={_node} 
+                           onNodeDataUpdate={this.datasetUpdated} />
            </div>;
   }
 

@@ -1,0 +1,20 @@
+[
+	{
+		"ID": "Viking 1",
+		"Phone": "Silicon & Synapse",
+		"City": "MS-DOS",
+		"Name": "Olaf the Stout"
+	},
+	{
+		"ID": "Viking 2",
+		"Phone": "Silicon & Synapse",
+		"City": "MS-DOS",
+		"Name": "Baleog the Fierce"
+	},
+	{
+		"ID": "Viking 3",
+		"Phone": "Silicon & Synapse",
+		"City": "MS-DOS",
+		"Name": "Erik the Swift"
+	}
+]
