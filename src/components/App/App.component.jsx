@@ -1,10 +1,7 @@
 import React from 'react';
 import TreeList from '../TreeList.component.jsx';
-import VikingsGame from '../VikingsGame.component.jsx';
-import ManipulatorUtils from '../../utils/dataset-manipulators.util.js';
+import Manipulators from '../../utils/dataset-manipulators.util.js';
 import classNames from '../../../node_modules/classnames/index.js';
-import VikingsGameUtils from '../../utils/vikings-game.utils.js';
-import {APP_CONSTANTS} from '../../../src/App.constants.js';
 
 export default class App extends React.Component {
 
@@ -22,11 +19,11 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    const _localData = ManipulatorUtils.readLocalData();
+    const _localData = Manipulators.readLocalData();
     this.setState({
       dataset: null === _localData ? this.props.dataset : _localData
     }, () => {
-      ManipulatorUtils.updateLocalData(this.state.dataset);
+      Manipulators.updateLocalData(this.state.dataset);
     });
   }
 
@@ -47,8 +44,6 @@ export default class App extends React.Component {
             <div className={'row'}>
               <div className={'column'}>
                 <a href="/" className={'button button-clear'}>hola demo</a>
-                {/* vikings module */}
-                <VikingsGame />
               </div>
             </div>
           </div>
@@ -59,8 +54,7 @@ export default class App extends React.Component {
             <div className={'row row-no-padding'}>
               <div className={'column'}>
                 {/* tree list */}
-                <TreeList dataset={this.state.dataset} 
-                          onDatasetUpdate={this.reloadDataset} />
+                <TreeList dataset={this.state.dataset} onDatasetUpdate={this.reloadDataset} />
                 <div id="urhl-empty-state" className={classNames(_classSetEmptyStates)}>
                   <h1>&#128561;</h1>
                   <h2>nothing to show</h2>
@@ -97,19 +91,15 @@ export default class App extends React.Component {
    * @param {object} node - Node to be deleted
    */
   _reloadDataset(node) {
-    const _childrenIds = ManipulatorUtils.findChildren(this.state.dataset, node.ID, [node.ID]);
+    const _childrenIds = Manipulators.findChildren(this.state.dataset, node.ID, [node.ID]);
     const _updatedDataset = this.state.dataset.filter(child => !_childrenIds.find(id => child.ID === id));
-    this.setState({
-      dataset: _updatedDataset
-    }, () => {
-      ManipulatorUtils.updateLocalData(_updatedDataset);
-      // dispatch quest event for delete
-      VikingsGameUtils.dispatchVikingsGameEvent(APP_CONSTANTS.quests.elementDeleted);
-      if(0 === this.state.dataset.length) {
-        // dispatch quest event for delete all elements
-        VikingsGameUtils.dispatchVikingsGameEvent(APP_CONSTANTS.quests.everythingDeleted);
-      }
-    });
+    window.setTimeout(() => {
+      this.setState({
+        dataset: _updatedDataset
+      }, () => {
+        Manipulators.updateLocalData(_updatedDataset);
+      });      
+    }, 100);
   };
 
   /**
@@ -119,9 +109,7 @@ export default class App extends React.Component {
     this.setState({
       dataset: this.props.dataset
     }, () => {
-      ManipulatorUtils.deleteLocalData();
-      // dispatch quest event for local data resetting
-      VikingsGameUtils.dispatchVikingsGameEvent(APP_CONSTANTS.quests.localDataResetted);
+      Manipulators.deleteLocalData();
     });
   };
 
