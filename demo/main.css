@@ -1,0 +1,296 @@
+/* main styles */
+
+/*
+--------------------------
+BASE
+--------------------------
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {}
+
+/*
+--------------------------
+CONTENT
+--------------------------
+*/
+
+#urhl-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 1.5rem 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 90;
+}
+
+#urhl-header .button {
+  margin-bottom: 0;
+}
+
+#urhl-content {
+  position: relative;
+  z-index: 80;
+  padding: 8rem 40px; /* top padding keeps absolute positioned togglers in screen */
+}
+
+#urhl-footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 1.5rem 0;
+  z-index: 70;
+}
+
+#urhl-footer .button {
+  margin-bottom: 0;
+}
+
+#urhl-main-wrapper {}
+
+/*
+--------------------------
+TREE
+--------------------------
+*/
+
+.urhl-tree {}
+
+.urhl-tree-item {}
+
+.urhl-tree-item .urhl-tree-item .urhl-tree-item {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-left: 40px; /* same with urhl-btn-toggle button width */
+}
+
+.urhl-tree-item ul {
+  list-style: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+.urhl-tree-item ul li {
+  margin-bottom: 0;
+}
+
+.urhl-tree-item-content {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #d2d2d2; 
+}
+
+.urhl-tree > .urhl-tree-item > ul li:last-child .urhl-tree-item-content {
+  border-bottom: none;
+}
+
+.urhl-tree-item-content button {
+  margin-bottom: 0;
+}
+
+.urhl-tree-item-controls {
+  position: relative;
+  float: right;
+}
+
+ul .urhl-tree-item-content + ul {
+  display: none;
+}
+
+ul .urhl-tree-item-content + ul.urhl-tree-item-expanded {
+  display: block;
+  position: relative;
+}
+
+.urhl-item-details {
+  position: relative;
+  float: left;
+  line-height: 3.8rem;
+}
+
+.urhl-item-details span {
+  display: block;
+  float: left;
+  width: 15rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 1.6rem;
+  overflow: hidden;
+}
+
+.urhl-item-details span:last-child {
+  margin-right: 0;
+}
+
+.urhl-item-details-root {
+  font-weight: bold;
+}
+
+.urhl-btn-toggle {
+  text-align: center;
+  position: absolute;
+  right: 100%;
+  top: -1px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40px;
+}
+
+.urhl-btn-delete {
+  /*float: right;*/
+}
+
+.urhl-btn-sure {
+  font-size: 10px;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+}
+
+.urhl-tree-root-node {}
+
+.urhl-tree-item-expanded {}
+
+.button-sure {
+  background-color: #ef3357;
+  border-color: #ef3357;
+}
+
+.button-sure.button-clear,
+.button-sure.button-outline {
+  background-color: transparent;
+  color: #ef3357;
+}
+
+.button-sure:hover {
+  background-color: crimson;
+  border-color: crimson;
+}
+
+.button-sure.button-clear {
+  border-color: transparent;
+}
+
+/*
+--------------------------
+EMPTY STATE
+--------------------------
+*/
+
+#urhl-empty-state {
+
+}
+
+/*
+--------------------------
+ICONS
+--------------------------
+*/
+
+.urhl-icon-toggle {
+  font-style: normal;
+}
+
+.urhl-icon-toggle::before {
+  content: "\25bd";
+}
+
+.urhl-icon-toggled::before {
+  content: "\25b6";
+}
+
+/*
+--------------------------
+UTILS
+--------------------------
+*/
+
+.urhl-hidden {
+   display: none; 
+}
+
+/*
+--------------------------
+QUERIES
+--------------------------
+*/
+
+@media (max-width: 840px) {
+
+  body {}
+
+  #urhl-header {
+    padding: 1rem 0;
+  }
+
+  #urhl-content {
+    padding: 4rem 10px;
+  }
+
+  .urhl-tree-item .urhl-tree-item .urhl-tree-item {
+    border-left: 10px solid rgba(0, 0, 0, 0.05);
+    margin-left: 0;
+  }
+
+  .urhl-tree-item-content {
+    padding-right: 1rem;
+  }
+
+  .urhl-item-details {
+    width: auto;
+    float: none;
+    line-height: 2.4rem;
+    padding: 1.5rem 0 .5rem;
+  }
+
+  .urhl-item-details span {
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+  .urhl-item-details span:last-child {
+    margin-right: 0;
+  }
+
+  .urhl-btn-toggle {
+    right: auto;
+    top: auto;
+    bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: auto;
+  }
+
+  .urhl-btn-delete {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #urhl-empty-state {
+
+  }
+
+  .urhl-icon-toggle {
+    font-style: normal;
+  }
+
+  .urhl-icon-toggle::before {
+    content: "collapse \25b3";
+  }
+
+  .urhl-icon-toggled::before {
+    content: "expand \25bc";
+  }
+
+  .urhl-hidden {
+     display: none; 
+  }
+
+}
