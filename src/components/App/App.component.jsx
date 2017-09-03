@@ -44,7 +44,7 @@ export default class App extends React.Component {
           <div className={'container'}>
             <div className={'row'}>
               <div className={'column'}>
-                <a href="/" className={'button button-clear'}>hola demo</a>
+                <a href="./" className={'button button-clear'}>hola demo</a>
               </div>
             </div>
           </div>
