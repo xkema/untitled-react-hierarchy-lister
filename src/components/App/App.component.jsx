@@ -94,7 +94,7 @@ export default class App extends React.Component {
    */
   _reloadDataset(node) {
     const _childrenIds = Manipulators.findChildren(this.state.dataset, node.ID, [node.ID]);
-    const _updatedDataset = this.state.dataset.filter(child => !_childrenIds.find(id => child.ID === id));
+    const _updatedDataset = this.state.dataset.filter(child => 'undefined' === typeof _childrenIds.find(id => child.ID === id));
     window.setTimeout(() => {
       this.setState({
         dataset: _updatedDataset
