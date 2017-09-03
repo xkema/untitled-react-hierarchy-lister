@@ -30,10 +30,10 @@ export default class TreeList extends React.Component {
     
     // create de-facto node for root item (Cidade de Deus, Hell of Heaven, Prayers)
     const _node = {
-      City: 'City',
+      NodeTwo: 'Node 2',
       ID: Infinity,
-      Name: 'Name',
-      Phone: 'Phone',
+      NodeOne: 'Node 1',
+      NodeThree: 'Node 3',
       parentID: Math.pow(Infinity, Infinity)
     };
 

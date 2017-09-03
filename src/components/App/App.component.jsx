@@ -16,6 +16,7 @@ export default class App extends React.Component {
     };
     this.reloadDataset = this._reloadDataset.bind(this);
     this.resetLocalData = this._resetLocalData.bind(this);
+    this.randomizeLocalData = this._randomizeLocalData.bind(this);
   }
 
   componentDidMount() {
@@ -73,6 +74,7 @@ export default class App extends React.Component {
             <div className={'row'}>
               <div className={'column'}>
                 <button onClick={this.resetLocalData} className={'button button-clear float-left '+classNames(_classSetFooterButton)}>reset local data</button>
+                <button onClick={this.randomizeLocalData} className={'button button-clear float-left '+classNames(_classSetFooterButton)}>randomize local data</button>
                 <a href="https://github.com/xkema/untitled-react-hierarchy-lister" className={'button button-clear'}>github link</a>
               </div>              
             </div>
@@ -108,6 +110,18 @@ export default class App extends React.Component {
   _resetLocalData() {
     this.setState({
       dataset: this.props.dataset
+    }, () => {
+      Manipulators.deleteLocalData();
+    });
+  };
+
+  /**
+   * Randomizes localstorage data
+   */
+  _randomizeLocalData() {
+    const randomized = Manipulators.generateRandomData(100);
+    this.setState({
+      dataset: randomized
     }, () => {
       Manipulators.deleteLocalData();
     });

@@ -85,4 +85,26 @@ export default class Manipulators {
     window.localStorage.removeItem('urhl-local-dataset');
   }
 
+  /**
+   * Generate random data
+   */
+  static generateRandomData(length) {
+    const randomKeywords = `JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, object-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA. As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded. Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets. Although there are strong outward similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design; JavaScript was influenced by programming languages such as Self and Scheme.[7]`.toLowerCase().replace(/[;:',\-\(\)\.\[\d\]]/gmi, '').replace(/(?:\b\s?(but|and|or|that|of|as|is|in|was|with|a|to|the|an|it|on|by)\b\s?)/gmi, ' ').split(/\s+/gmi);
+    let randomized = [];
+    for(let i=0; i<length; i++) {
+      const parentID = Math.floor(Math.random() * i);
+      let item = {
+        ID: i,
+        NodeThree: `${randomKeywords[Math.floor(Math.random() * randomKeywords.length)]}`,
+        NodeTwo: `${randomKeywords[Math.floor(Math.random() * randomKeywords.length)]}`,
+        NodeOne: `${randomKeywords[Math.floor(Math.random() * randomKeywords.length)]}`
+      };
+      if(0 !== parentID) {
+        item.parentID = parentID;
+      }
+      randomized.push(item);
+    }
+    return randomized;
+  }
+
 }

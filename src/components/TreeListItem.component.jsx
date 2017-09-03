@@ -131,9 +131,9 @@ export default class TreeListItem extends React.Component {
     return <div className={'urhl-item-details '+classNames(_classSetItemDetails)}>
              {/*<span>{this.props.node.ID}</span>*/}
              {/*<span>{this.props.node.parentID}</span>*/}
-             <span>{this.props.node.Name}</span>
-             <span>{this.props.node.City}</span>
-             <span>{this.props.node.Phone}</span>
+             <span>{this.props.node.NodeOne}</span>
+             <span>{this.props.node.NodeTwo}</span>
+             <span>{this.props.node.NodeThree}</span>
            </div>;
   }
 
@@ -150,7 +150,7 @@ export default class TreeListItem extends React.Component {
       };
       const _renderedElements = this.props.children.map((child, index) => {
         const _nodeData = Manipulators.splitData(this.props.remains, child.ID);
-        return <li key={child.Name}>
+        return <li key={child.ID}>
                  <TreeListItem children={_nodeData.children} remains={_nodeData.remains} node={child} onNodeDataUpdate={this.props.onNodeDataUpdate} />
                </li>;
       });

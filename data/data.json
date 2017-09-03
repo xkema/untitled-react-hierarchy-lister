@@ -1,0 +1,697 @@
+[
+  {
+    "ID": 0,
+    "NodeThree": "programming",
+    "NodeTwo": "languages",
+    "NodeOne": "javascript"
+  },
+  {
+    "ID": 1,
+    "NodeThree": "text",
+    "NodeTwo": "production",
+    "NodeOne": "video"
+  },
+  {
+    "ID": 2,
+    "NodeThree": "provide",
+    "NodeTwo": "libraries",
+    "NodeOne": "syntax",
+    "parentID": 1
+  },
+  {
+    "ID": 3,
+    "NodeThree": "text",
+    "NodeTwo": "many",
+    "NodeOne": "engines",
+    "parentID": 2
+  },
+  {
+    "ID": 4,
+    "NodeThree": "environments",
+    "NodeTwo": "environments",
+    "NodeOne": "means",
+    "parentID": 2
+  },
+  {
+    "ID": 5,
+    "NodeThree": "objectoriented",
+    "NodeTwo": "host",
+    "NodeOne": "distinct",
+    "parentID": 1
+  },
+  {
+    "ID": 6,
+    "NodeThree": "typed",
+    "NodeTwo": "objectoriented",
+    "NodeOne": "employ",
+    "parentID": 2
+  },
+  {
+    "ID": 7,
+    "NodeThree": "standard",
+    "NodeTwo": "regular",
+    "NodeOne": "without"
+  },
+  {
+    "ID": 8,
+    "NodeThree": "servers",
+    "NodeTwo": "programs",
+    "NodeOne": "prototypebased",
+    "parentID": 5
+  },
+  {
+    "ID": 9,
+    "NodeThree": "now",
+    "NodeTwo": "design",
+    "NodeOne": "multiparadigm",
+    "parentID": 3
+  },
+  {
+    "ID": 10,
+    "NodeThree": "video",
+    "NodeTwo": "engines",
+    "NodeOne": "css",
+    "parentID": 4
+  },
+  {
+    "ID": 11,
+    "NodeThree": "including",
+    "NodeTwo": "host",
+    "NodeOne": "embedded",
+    "parentID": 7
+  },
+  {
+    "ID": 12,
+    "NodeThree": "are",
+    "NodeTwo": "modern",
+    "NodeOne": "often",
+    "parentID": 4
+  },
+  {
+    "ID": 13,
+    "NodeThree": "which",
+    "NodeTwo": "without",
+    "NodeOne": "make",
+    "parentID": 2
+  },
+  {
+    "ID": 14,
+    "NodeThree": "relying",
+    "NodeTwo": "api",
+    "NodeOne": "world",
+    "parentID": 4
+  },
+  {
+    "ID": 15,
+    "NodeThree": "regular",
+    "NodeTwo": "html",
+    "NodeOne": "eventdriven",
+    "parentID": 11
+  },
+  {
+    "ID": 16,
+    "NodeThree": "javascript",
+    "NodeTwo": "need",
+    "NodeOne": "databases",
+    "parentID": 6
+  },
+  {
+    "ID": 17,
+    "NodeThree": "html",
+    "NodeTwo": "between",
+    "NodeOne": "such",
+    "parentID": 8
+  },
+  {
+    "ID": 18,
+    "NodeThree": "interpreted",
+    "NodeTwo": "eventdriven",
+    "NodeOne": "based",
+    "parentID": 12
+  },
+  {
+    "ID": 19,
+    "NodeThree": "plugins",
+    "NodeTwo": "now",
+    "NodeOne": "api",
+    "parentID": 6
+  },
+  {
+    "ID": 20,
+    "NodeThree": "programming",
+    "NodeTwo": "web",
+    "NodeOne": "dynamic",
+    "parentID": 19
+  },
+  {
+    "ID": 21,
+    "NodeThree": "does",
+    "NodeTwo": "other",
+    "NodeOne": "graphics",
+    "parentID": 5
+  },
+  {
+    "ID": 22,
+    "NodeThree": "many",
+    "NodeTwo": "these",
+    "NodeOne": "clientside",
+    "parentID": 12
+  },
+  {
+    "ID": 23,
+    "NodeThree": "similarities",
+    "NodeTwo": "design",
+    "NodeOne": "embedded",
+    "parentID": 18
+  },
+  {
+    "ID": 24,
+    "NodeThree": "serverside",
+    "NodeTwo": "standard",
+    "NodeOne": "supports",
+    "parentID": 4
+  },
+  {
+    "ID": 25,
+    "NodeThree": "beyond",
+    "NodeTwo": "are",
+    "NodeOne": "online",
+    "parentID": 9
+  },
+  {
+    "ID": 26,
+    "NodeThree": "respective",
+    "NodeTwo": "strong",
+    "NodeOne": "js",
+    "parentID": 4
+  },
+  {
+    "ID": 27,
+    "NodeThree": "relying",
+    "NodeTwo": "NodeOne",
+    "NodeOne": "manipulation",
+    "parentID": 3
+  },
+  {
+    "ID": 28,
+    "NodeThree": "are",
+    "NodeTwo": "features",
+    "NodeOne": "host",
+    "parentID": 1
+  },
+  {
+    "ID": 29,
+    "NodeThree": "self",
+    "NodeTwo": "scheme",
+    "NodeOne": "additional"
+  },
+  {
+    "ID": 30,
+    "NodeThree": "including",
+    "NodeTwo": "dom",
+    "NodeOne": "similarities",
+    "parentID": 17
+  },
+  {
+    "ID": 31,
+    "NodeThree": "these",
+    "NodeTwo": "databases",
+    "NodeOne": "engines",
+    "parentID": 5
+  },
+  {
+    "ID": 32,
+    "NodeThree": "builtin",
+    "NodeTwo": "two",
+    "NodeOne": "outward",
+    "parentID": 8
+  },
+  {
+    "ID": 33,
+    "NodeThree": "such",
+    "NodeTwo": "javascript",
+    "NodeOne": "represent",
+    "parentID": 23
+  },
+  {
+    "ID": 34,
+    "NodeThree": "relying",
+    "NodeTwo": "upon",
+    "NodeOne": "such",
+    "parentID": 8
+  },
+  {
+    "ID": 35,
+    "NodeThree": "storage",
+    "NodeTwo": "arrays",
+    "NodeOne": "initially",
+    "parentID": 12
+  },
+  {
+    "ID": 36,
+    "NodeThree": "javascript",
+    "NodeTwo": "such",
+    "NodeOne": "for",
+    "parentID": 22
+  },
+  {
+    "ID": 37,
+    "NodeThree": "are",
+    "NodeTwo": "i/o",
+    "NodeOne": "are",
+    "parentID": 30
+  },
+  {
+    "ID": 38,
+    "NodeThree": "engines",
+    "NodeTwo": "highlevel",
+    "NodeOne": "engines"
+  },
+  {
+    "ID": 39,
+    "NodeThree": "specification",
+    "NodeTwo": "multiparadigm",
+    "NodeOne": "not",
+    "parentID": 3
+  },
+  {
+    "ID": 40,
+    "NodeThree": "all",
+    "NodeTwo": "many",
+    "NodeOne": "engines",
+    "parentID": 36
+  },
+  {
+    "ID": 41,
+    "NodeThree": "engine",
+    "NodeTwo": "although",
+    "NodeOne": "java",
+    "parentID": 13
+  },
+  {
+    "ID": 42,
+    "NodeThree": "programming",
+    "NodeTwo": "including",
+    "NodeOne": "one",
+    "parentID": 11
+  },
+  {
+    "ID": 43,
+    "NodeThree": "ecma",
+    "NodeTwo": "many",
+    "NodeOne": "types",
+    "parentID": 28
+  },
+  {
+    "ID": 44,
+    "NodeThree": "programs",
+    "NodeTwo": "api",
+    "NodeOne": "based",
+    "parentID": 31
+  },
+  {
+    "ID": 45,
+    "NodeThree": "modern",
+    "NodeTwo": "supports",
+    "NodeOne": "clientside",
+    "parentID": 14
+  },
+  {
+    "ID": 46,
+    "NodeThree": "javascript",
+    "NodeTwo": "world",
+    "NodeOne": "wide",
+    "parentID": 13
+  },
+  {
+    "ID": 47,
+    "NodeThree": "desktop",
+    "NodeTwo": "javascript",
+    "NodeOne": "including",
+    "parentID": 32
+  },
+  {
+    "ID": 48,
+    "NodeThree": "javascript",
+    "NodeTwo": "for",
+    "NodeOne": "text",
+    "parentID": 16
+  },
+  {
+    "ID": 49,
+    "NodeThree": "dynamic",
+    "NodeTwo": "spec",
+    "NodeOne": "supporting",
+    "parentID": 28
+  },
+  {
+    "ID": 50,
+    "NodeThree": "typed",
+    "NodeTwo": "builtin",
+    "NodeOne": "core",
+    "parentID": 2
+  },
+  {
+    "ID": 51,
+    "NodeThree": "pdf",
+    "NodeTwo": "does",
+    "NodeOne": "are",
+    "parentID": 50
+  },
+  {
+    "ID": 52,
+    "NodeThree": "different",
+    "NodeTwo": "libraries",
+    "NodeOne": "greatly",
+    "parentID": 26
+  },
+  {
+    "ID": 53,
+    "NodeThree": "/ˈdʒɑːvəˌskrɪpt/",
+    "NodeTwo": "are",
+    "NodeOne": "spec",
+    "parentID": 23
+  },
+  {
+    "ID": 54,
+    "NodeThree": "language",
+    "NodeTwo": "supporting",
+    "NodeOne": "ecma",
+    "parentID": 10
+  },
+  {
+    "ID": 55,
+    "NodeThree": "available",
+    "NodeTwo": "javascript",
+    "NodeOne": "such",
+    "parentID": 14
+  },
+  {
+    "ID": 56,
+    "NodeThree": "engine",
+    "NodeTwo": "desktop",
+    "NodeOne": "manipulation",
+    "parentID": 27
+  },
+  {
+    "ID": 57,
+    "NodeThree": "design",
+    "NodeTwo": "such",
+    "NodeOne": "java",
+    "parentID": 21
+  },
+  {
+    "ID": 58,
+    "NodeThree": "for",
+    "NodeTwo": "programming",
+    "NodeOne": "respective",
+    "parentID": 2
+  },
+  {
+    "ID": 59,
+    "NodeThree": "objectoriented",
+    "NodeTwo": "programs",
+    "NodeOne": "networking",
+    "parentID": 33
+  },
+  {
+    "ID": 60,
+    "NodeThree": "regular",
+    "NodeTwo": "host",
+    "NodeOne": "initially",
+    "parentID": 56
+  },
+  {
+    "ID": 61,
+    "NodeThree": "now",
+    "NodeTwo": "include",
+    "NodeOne": "dynamic",
+    "parentID": 30
+  },
+  {
+    "ID": 62,
+    "NodeThree": "does",
+    "NodeTwo": "there",
+    "NodeOne": "although",
+    "parentID": 32
+  },
+  {
+    "ID": 63,
+    "NodeThree": "implementation",
+    "NodeTwo": "embedded",
+    "NodeOne": "for",
+    "parentID": 55
+  },
+  {
+    "ID": 64,
+    "NodeThree": "pdf",
+    "NodeTwo": "although",
+    "NodeOne": "desktop",
+    "parentID": 32
+  },
+  {
+    "ID": 65,
+    "NodeThree": "including",
+    "NodeTwo": "i/o",
+    "NodeOne": "for",
+    "parentID": 45
+  },
+  {
+    "ID": 66,
+    "NodeThree": "libraries",
+    "NodeTwo": "ecmascript",
+    "NodeOne": "web",
+    "parentID": 36
+  },
+  {
+    "ID": 67,
+    "NodeThree": "these",
+    "NodeTwo": "language",
+    "NodeOne": "supporting",
+    "parentID": 3
+  },
+  {
+    "ID": 68,
+    "NodeThree": "serverside",
+    "NodeTwo": "for",
+    "NodeOne": "abbreviated",
+    "parentID": 28
+  },
+  {
+    "ID": 69,
+    "NodeThree": "content",
+    "NodeTwo": "wide",
+    "NodeOne": "between",
+    "parentID": 20
+  },
+  {
+    "ID": 70,
+    "NodeThree": "interpreted",
+    "NodeTwo": "need",
+    "NodeOne": "multiparadigm",
+    "parentID": 41
+  },
+  {
+    "ID": 71,
+    "NodeThree": "software",
+    "NodeTwo": "libraries",
+    "NodeOne": "many",
+    "parentID": 11
+  },
+  {
+    "ID": 72,
+    "NodeThree": "pdf",
+    "NodeTwo": "supporting",
+    "NodeOne": "language",
+    "parentID": 71
+  },
+  {
+    "ID": 73,
+    "NodeThree": "web",
+    "NodeTwo": "programming",
+    "NodeOne": "make",
+    "parentID": 8
+  },
+  {
+    "ID": 74,
+    "NodeThree": "typed",
+    "NodeTwo": "there",
+    "NodeOne": "javascript",
+    "parentID": 45
+  },
+  {
+    "ID": 75,
+    "NodeThree": "applications",
+    "NodeTwo": "widgets",
+    "NodeOne": "engine",
+    "parentID": 46
+  },
+  {
+    "ID": 76,
+    "NodeThree": "javascript",
+    "NodeTwo": "self",
+    "NodeOne": "js",
+    "parentID": 26
+  },
+  {
+    "ID": 77,
+    "NodeThree": "between",
+    "NodeTwo": "javascript",
+    "NodeOne": "similarities",
+    "parentID": 19
+  },
+  {
+    "ID": 78,
+    "NodeThree": "interpreted",
+    "NodeTwo": "such",
+    "NodeOne": "mobile",
+    "parentID": 48
+  },
+  {
+    "ID": 79,
+    "NodeThree": "specification",
+    "NodeTwo": "not",
+    "NodeOne": "embedded",
+    "parentID": 68
+  },
+  {
+    "ID": 80,
+    "NodeThree": "typed",
+    "NodeTwo": "initially",
+    "NodeOne": "implementation",
+    "parentID": 8
+  },
+  {
+    "ID": 81,
+    "NodeThree": "strong",
+    "NodeTwo": "has",
+    "NodeOne": "three",
+    "parentID": 40
+  },
+  {
+    "ID": 82,
+    "NodeThree": "ecmascript",
+    "NodeTwo": "web",
+    "NodeOne": "additional",
+    "parentID": 62
+  },
+  {
+    "ID": 83,
+    "NodeThree": "relying",
+    "NodeTwo": "programming",
+    "NodeOne": "fully",
+    "parentID": 45
+  },
+  {
+    "ID": 84,
+    "NodeThree": "javascript",
+    "NodeTwo": "browsers",
+    "NodeOne": "these",
+    "parentID": 15
+  },
+  {
+    "ID": 85,
+    "NodeThree": "libraries",
+    "NodeTwo": "builtin",
+    "NodeOne": "available",
+    "parentID": 40
+  },
+  {
+    "ID": 86,
+    "NodeThree": "there",
+    "NodeTwo": "functional",
+    "NodeOne": "any",
+    "parentID": 44
+  },
+  {
+    "ID": 87,
+    "NodeThree": "writing",
+    "NodeTwo": "javascript",
+    "NodeOne": "desktop",
+    "parentID": 86
+  },
+  {
+    "ID": 88,
+    "NodeThree": "js",
+    "NodeTwo": "including",
+    "NodeOne": "engines",
+    "parentID": 68
+  },
+  {
+    "ID": 89,
+    "NodeThree": "each",
+    "NodeTwo": "graphics",
+    "NodeOne": "relying",
+    "parentID": 84
+  },
+  {
+    "ID": 90,
+    "NodeThree": "used",
+    "NodeTwo": "including",
+    "NodeOne": "languages",
+    "parentID": 47
+  },
+  {
+    "ID": 91,
+    "NodeThree": "multiparadigm",
+    "NodeTwo": "are",
+    "NodeOne": "respective",
+    "parentID": 68
+  },
+  {
+    "ID": 92,
+    "NodeThree": "influenced",
+    "NodeTwo": "between",
+    "NodeOne": "facilities",
+    "parentID": 58
+  },
+  {
+    "ID": 93,
+    "NodeThree": "browsers",
+    "NodeTwo": "features",
+    "NodeOne": "are",
+    "parentID": 92
+  },
+  {
+    "ID": 94,
+    "NodeThree": "networking",
+    "NodeTwo": "/ˈdʒɑːvəˌskrɪpt/",
+    "NodeOne": "design",
+    "parentID": 17
+  },
+  {
+    "ID": 95,
+    "NodeThree": "software",
+    "NodeTwo": "specification",
+    "NodeOne": "objectoriented",
+    "parentID": 73
+  },
+  {
+    "ID": 96,
+    "NodeThree": "working",
+    "NodeTwo": "fully",
+    "NodeOne": "graphics",
+    "parentID": 20
+  },
+  {
+    "ID": 97,
+    "NodeThree": "specification",
+    "NodeTwo": "supporting",
+    "NodeOne": "databases",
+    "parentID": 94
+  },
+  {
+    "ID": 98,
+    "NodeThree": "dynamic",
+    "NodeTwo": "programs",
+    "NodeOne": "programming",
+    "parentID": 49
+  },
+  {
+    "ID": 99,
+    "NodeThree": "webpages",
+    "NodeTwo": "websites",
+    "NodeOne": "distinct",
+    "parentID": 80
+  }
+]
